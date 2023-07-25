@@ -264,7 +264,6 @@ abstract class WC_Settings_API {
 	 */
 	public function init_settings() {
 		$this->settings = get_option( $this->get_option_key(), null );
-
 		// If there are no settings defined, use defaults.
 		if ( ! is_array( $this->settings ) ) {
 			$form_fields    = $this->get_form_fields();
